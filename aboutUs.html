@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <style>
+            body{
+                background-color: azure;
+                
+            }
+            #image1{
+                height: 150px;
+                width: 20%;
+                float: left;
+                box-shadow: 4px 4px black;
+            }
+            
+            #image2{
+                height: 150px;
+                width: 20%;
+                float: right;
+                box-shadow: 3px 3px black;
+                             
+            }
+            
+            #topic{
+                height: 120px;
+                width: 20%;
+                margin-left: 44.2%;
+                padding-top: 25px;
+                padding-left: 10px;
+                margin-bottom: 25px;
+                background:rgba(128,128,128,0.3);
+                border-radius: 10px;
+                
+            }
+            
+            #topic ,h1{
+                font-size: 30px;
+                text-align: center;
+                padding-right: 6px;
+                padding-bottom: 0%;
+                font-family: inherit;
+            }
+    
+            
+            
+
+/* Slideshow container */
+.slideshow-container {
+  border:4px solid black;
+  height: 500px;
+  width: 65%;    
+  position: relative;
+  margin-top: 20px;
+  padding-top: 20px;
+  margin-left: 21%;
+  border-radius: 10px;
+  box-shadow: 10px 10px grey;
+  background: grey;   
+}
+    
+.images{
+ opacity: 0.5;
+ filter:alpha(opacity=30);
+                
+    }            
+.images:hover{
+  opacity: 1.0;
+  filter: alpha(opacity=500);
+    }
+/* Hide the images by default */
+.mySlides {
+    display: none;
+    background: (128,128,128,0.4);
+}
+            
+            .mySlides fade{
+                background: (128,128,128,0.5);
+            }  
+            
+.textt{
+    border: 1px   black;
+    height: 50%;
+    width: 80%;
+    margin-left: 6%;
+    text-align: center;
+    margin-top: 20%;
+}
+
+.textt p{
+    font-size: 30px;  
+    padding-right: 20px;
+    
+      }            
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+            
+            
+            
+                        
+            
+            .grid-container{
+                border: 2px solid grey;
+                display: grid;
+                grid-column-gap: 50px;
+            }
+            
+            .container{
+                margin-left: 100px;
+            }
+           
+        #images1{
+            float: left;
+            padding-left: 16%;
+            border-radius: 10px;
+            }
+            
+            #images2{
+            float: left;
+            padding-left: 3%;  
+            border-radius: 10px;    
+                
+            } 
+            
+            #images3{
+                float: right;
+                padding-right: 15%;
+                border-radius: 10px;
+            } 
+            
+
+#menu{
+    height: 50px;
+    background: aqua;
+    padding: 8px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+#menu ul li{
+    float: left;
+    padding: 0 30px;
+}
+
+#menu ul li:last-child{
+    border-right: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
+    color: purple;
+    line-height: 30px;
+    -webkit-transition: font-size 0.5s linear;
+    -webkit-moz-transition: font-size 0.5s linear;
+    -webkit-o-transition: font-size 0.5s linear;
+    -webkit-ms-transition: font-size 0.5s linear;
+    -webkit-transition: font-size 0.5s linear;
+}
+
+#menu ul li a:hover, #menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color:purple;
+}
+
+            div p{
+                padding-left: 17%;
+            }            
+                         
+                  
+        </style>
+    </head>
+<body id="Body">
+    
+<div id="menu">
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="contactus.html" target="_blank">CONTACT US</a></li>
+        <li><a href=signup.html target="_blank">SIGN UP</a></li>
+        <li><a href="gallery.html" target="_blank">GALLERY</a></li>
+        <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+    </ul>
+</div>
+        <img src="images/9.jpg" id="image1">    
+        <img src="images/10.jpg" id="image2"><br>
+    
+       <div id="topic">
+           <h1>OUR STORY</h1>
+       </div>
+        
+    
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade" style="background=(128,128,128,0.3)">
+    <div class="textt">
+    <p style="font-size: 39px;"><b>Exactly 10 years ago we had a vision</b></p>
+    </div> 
+  </div>
+
+  <div class="mySlides fade">
+      <div class="textt">
+    <p><b>To Encourage young people who have an interest in Programming</b></p>      
+      </div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="textt">
+    <p><b>To pick up and develop their programming interest</b></p>    
+    </div>
+  </div>
+    
+  <div class="mySlides fade">
+    <div class="textt">
+    <p style="font-size: 50px;"><b>And change the world</b></p>    
+    </div>
+  </div>    
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+</div>
+    
+    
+    
+    
+    
+    <!--Beneath Containers-->
+    <!--Beneath Containers-->
+   
+    
+    <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    </script>
+</body>
+</html>
+
